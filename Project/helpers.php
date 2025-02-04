@@ -39,3 +39,28 @@ function loadPartial($name)
         echo "View '{$partialPath} not found";
     }
 }
+
+/**
+ * Inspect a value
+ * @param mixed $value
+ * @return void
+ */
+function inspect($value)
+{
+    echo '<pre>';
+    var_dump($value);
+    echo '</pre>';
+}
+
+/**
+ * Inspect a value and die
+ * @param mixed $value
+ * @return void
+ */
+function inspectAndDie($value)
+{
+    echo '<pre>';
+    var_dump($value);
+    echo '</pre>';
+    die();
+}
